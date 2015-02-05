@@ -2,14 +2,14 @@
     {
         "age": 0, 
         "id": "toyota_camry", 
-        "imageUrl": "img/camry.jpg", 
+        "imageUrl": "img/cars/camry.jpg", 
         "name": "Camry", 
         "snippet": "The Camry, blah, blah, blah."
     }, 
     {
         "age": 1, 
         "id": "toyota_corolla", 
-        "imageUrl": "img/corolla.jpg", 
+        "imageUrl": "img/cars/corolla.jpg", 
         "name": "Corolla", 
         "snippet": "The Corolla, blah, blah, blah."
     }

@@ -1,17 +1,19 @@
-/*controllers*/
+'use strict';
 
-var tvtsApp = angular.module('tvtsApp', []);
+/* Controllers */
 
-tvtsApp.controller('ModelsListCtrl', function($scope, $http) {
+var tvtsControllers = angular.module('tvtsControllers', []);
 
-	$http.get('cars/cars.json').success(function(data) {
-		$scope.models = data;
-	});
+tvtsControllers.controller('ModelListCtrl', ['$scope', '$http',
+  function($scope, $http) {
+    $http.get('cars/cars.json').success(function(data) {
+      $scope.models = data;
+    });
 
+    $scope.orderProp = 'age';
+  }]);
 
-	$scope.orderProp = 'age';
-});
-
-// tvtsApp.controller("ModelDetailCtrl", function($scope, $routeParams) {
-// 	$scope.modelId = $routeParams.modelId;
-// });
+tvtsControllers.controller('ModelDetailCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    $scope.modelId = $routeParams.modelId;
+  }]);

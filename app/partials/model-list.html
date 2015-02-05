@@ -1,26 +1,27 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2">
-      <!--Sidebar content-->
+ <h1 class="page-header" style="text-align:center;">Models</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <!--Sidebar content-->
 
-      Search: <input ng-model="query">
-      Sort by:
-      <select ng-model="orderProp">
-        <option value="name">Alphabetical</option>
-        <option value="age">Newest</option>
-      </select>
-
-    </div>
-      <div class="col-md-10">
-        <!--Body content-->
-
-        <ul class="models">
-          <li ng-repeat="model in models | filter:query | orderBy:orderProp" class="thumbnail">
-            <a href="#/styles/{{model.id}}" class="thumb"><img ng-src="{{model.imageUrl}}"></a>
-            <a href="#/styles/{{model.id}}">{{model.name}}</a>
-          </li>
-        </ul>
+        Search: <input ng-model="query">
+        Sort by:
+        <select ng-model="orderProp">
+          <option value="name">Alphabetical</option>
+          <option value="age">Newest</option>
+        </select>
 
       </div>
+        <div class="col-md-10">
+          <!--Body content-->
+
+          <ul class="models">
+            <li ng-repeat="model in models | filter:query | orderBy:orderProp" class="thumbnail">
+              <a href="#/styles/{{model.id}}" class="thumb"><img ng-src="{{model.imageUrl}}"></a>
+              <a href="#/styles/{{model.id}}">{{model.name}}</a>
+            </li>
+          </ul>
+
+        </div>
+    </div>
   </div>
-</div>

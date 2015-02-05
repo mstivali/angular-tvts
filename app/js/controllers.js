@@ -11,9 +11,24 @@ tvtsControllers.controller('ModelListCtrl', ['$scope', '$http',
     });
 
     $scope.orderProp = 'age';
+
+
   }]);
 
-tvtsControllers.controller('ModelDetailCtrl', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
+tvtsControllers.controller('ModelDetailCtrl', ['$scope', '$http', '$routeParams',
+  function($scope, $http, $routeParams) {
     $scope.modelId = $routeParams.modelId;
+
+    $http.get('cars/4RunnerStyles.json').success(function(data) {
+      	// alert(JSON.stringify(data.Styles));
+      	$scope.styles = data.Styles;
+    });
+
+
+  }]);
+
+tvtsControllers.controller('StyleDetailCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+  	$scope.styleId = $routeParams.styleId
+  	
   }]);

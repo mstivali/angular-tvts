@@ -14,9 +14,13 @@ tvtsApp.config(['$routeProvider',
         templateUrl: 'partials/model-list.html',
         controller: 'ModelListCtrl'
       }).
-      when('/models/:modelId', {
+      when('/styles/:modelId', {
         templateUrl: 'partials/model-detail.html',
         controller: 'ModelDetailCtrl'
+      }).
+      when('/styleDetail/:styleId', {
+        templateUrl: 'partials/style-detail.html',
+        controller: 'StyleDetailCtrl'
       }).
       otherwise({
         redirectTo: '/models'

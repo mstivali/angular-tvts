@@ -11,17 +11,16 @@
       </select>
 
     </div>
-    <div class="col-md-10">
-      <!--Body content-->
+      <div class="col-md-10">
+        <!--Body content-->
 
-      <ul class="models">
-        <li ng-repeat="model in models | filter:query | orderBy:orderProp" class="thumbnail">
-          <a href="#/models/{{model.id}}" class="thumb"><img ng-src="{{model.imageUrl}}"></a>
-          <a href="#/models/{{model.id}}">{{model.name}}</a>
-          <p>{{model.snippet}}</p>
-        </li>
-      </ul>
+        <ul class="models">
+          <li ng-repeat="model in models | filter:query | orderBy:orderProp" class="thumbnail">
+            <a href="#/styles/{{model.id}}" class="thumb"><img ng-src="{{model.imageUrl}}"></a>
+            <a href="#/styles/{{model.id}}">{{model.name}}</a>
+          </li>
+        </ul>
 
-    </div>
+      </div>
   </div>
 </div>

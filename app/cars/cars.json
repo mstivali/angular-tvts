@@ -17,18 +17,6 @@
         "name": "Avalon Hybrid"
     },
     {
-        "age" : 2,
-        "id": "Toyota_Camry",
-        "imageUrl": "img/cars/camry.jpg", 
-        "name": "Camry"
-    },
-    {
-        "age" : 3,
-        "id": "Toyota_Camry_Hybrid",
-        "imageUrl" : "img/cars/camry_hybrid.png",
-        "name": "Camry Hybrid"
-    },
-    {
         "age" : 4,
         "id": "Toyota_Corolla",
         "imageUrl": "img/cars/corolla.jpg", 
@@ -47,34 +35,16 @@
         "name": "Highlander Hybrid"
     },
     {
-        "age" : 7,
-        "id": "Toyota_Land_Cruiser",
-        "imageUrl": "img/cars/landcruiser.jpg", 
-        "name": "Land Cruiser"
-    },
-    {
         "age" : 8,
         "id": "Toyota_Prius",
         "imageUrl": "img/cars/prius.jpg", 
         "name": "Prius"
     },
     {
-        "age" : 9,
-        "id": "Toyota_Prius_Plug_in",
-        "imageUrl" : "img/cars/prius_plugin.png", 
-        "name": "Prius Plug-in"
-    },
-    {
         "age" : 10,
         "id": "Toyota_Prius_c",
         "imageUrl" : "img/cars/prius_c.jpg",
         "name": "Prius c"
-    },
-    {
-        "age" : 11,
-        "id": "Toyota_Prius_v",
-        "imageUrl" : "img/cars/prius_v.jpg",
-        "name": "Prius v"
     },
     {
         "age" : 12,
@@ -87,18 +57,6 @@
         "id": "Toyota_Sequoia",
         "imageUrl" : "img/cars/sequoia.jpg",
         "name": "Sequoia"
-    },
-    {
-        "age" : 14,
-        "id": "Toyota_Sienna",
-        "imageUrl" : "img/cars/sienna.jpg",
-        "name": "Sienna"
-    },
-    {
-        "age" : 15,
-        "id": "Toyota_Tacoma",
-        "imageUrl" : "img/cars/tacoma.jpg",
-        "name": "Tacoma"
     },
     {
         "age" : 16,

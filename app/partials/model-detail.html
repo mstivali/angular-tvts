@@ -19,9 +19,11 @@ Detail view for <span>{{modelId}}</span>
 	      <ul class="models">
 	        <li ng-repeat="style in styles | filter:query | orderBy:orderProp" class="thumbnail">
 	        	<a href="#/styleDetail/{{style.Id}}">{{style.Name}}</a>
+	        	<div class="col-md-2">
 	        	<p>Model: {{style.Submodel.ModelName}}</p>
 	        	<p>Trim: {{style.Trim}}</p>
 	        	<p>Style Id: {{style.Id}}</p>
+	        	</div>
 	        </li>
 	      </ul>
 	    </div>
